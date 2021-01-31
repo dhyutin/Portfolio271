@@ -1,0 +1,124 @@
+<html>
+   <head>
+      <title> gallery </title>
+      <style>
+       body {
+             background-color:#312c51;
+            }
+        .a 
+        {
+            text-align: center;
+        }
+        
+        .b 
+        {
+            text-align: left;
+        }
+       
+        .c 
+        {
+            text-align: right;
+        } 
+       
+        .d 
+        {
+           text-align: justify;
+        }
+        .center
+        {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 18px;
+       }
+
+       img 
+      { 
+          width: 100%;
+          height: auto;
+         opacity: 0.3;
+      }
+        .fling-minislide {width:100%; height:0px; padding-bottom: 70%; overflow:hidden; position:relative; }
+        .fling-minislide img{ position:absolute; animation:fling-minislide 32s infinite; opacity:0; width: 100%; height: auto;}
+
+        @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+   
+        .fling-minislide img:nth-child(7){animation-delay:0s;}
+        .fling-minislide img:nth-child(6){animation-delay:4s;}
+        .fling-minislide img:nth-child(5){animation-delay:8s;}
+        .fling-minislide img:nth-child(4){animation-delay:12s;}
+        .fling-minislide img:nth-child(3){animation-delay:16s;}
+        .fling-minislide img:nth-child(2){animation-delay:20s;}
+        .fling-minislide img:nth-child(1){animation-delay:24s;}
+        /* unvisited link */
+        a:link 
+        {
+            color: lightgray;
+        }
+
+        /* visited link */
+        a:visited 
+        {
+           color: white;
+        }
+
+       /* mouse over link */
+        a:hover 
+        {
+           color: darkgray;
+        }
+
+        /* selected link */
+        a:active
+        {
+           color: darkcyan;
+        } 
+        body
+        {
+           font-family: Andalé Mono,monospace; font-size : 20px;
+        }
+
+h1 {
+font-family: 'Megrim', cursive;
+
+color:#ffffff;
+}
+        
+       </style>
+   </head>
+   <body>
+       
+       <STYLE>A {text-decoration: none;} </STYLE>
+      <div class="c">
+      
+         <a href="home.html"> HOME </a><span>|</span>
+         <a href="edu.html"> ABOUT US </a><span>|</span>
+         <a href="hobbies.html"> HOBBIES </a><span>|</span>
+         <span style="color: darkcyan;"> GALLERY </span>
+         
+     
+      </div>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kranky&family=League+Script&family=Megrim&display=swap" rel="stylesheet">
+      <div class="a"><h1 style="font-size:100px;">...Gallery...</h1></div>
+    
+      
+           <div class="fling-minislide">
+           
+           <img src="2.jpg"  alt="slide5"/>
+           <img src="1.jpg"  alt="slide6"/>
+           <img src="3.jpg"  alt="slide4"/>
+           <img src="6.jpg"  alt="slide1"/>
+           <img src="4.jpg"  alt="slide3"/>
+           <img src="5.jpg"  alt="slide2"/>
+           <img src="7.jpg"  alt="slide7"/>
+           </div>
+           
+          
+           
+         
+      
+      
+           
+   </body>
+</html>
